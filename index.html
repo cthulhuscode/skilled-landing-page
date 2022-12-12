@@ -18,78 +18,85 @@
 </head>
 
 <body>
-  <header class="header">
-    <img class="header__logo" src="./images/logo-dark.svg" alt="skilled logo">
-    <button class="button header__button">Get Started</button>
-  </header>
+  <section class="container">
+    <header class="header">
+      <img class="header__logo" src="./images/logo-dark.svg" alt="skilled logo">
+      <button class="header__button">Get Started</button>
+    </header>
 
-  <section class="hero">
-    <div class="hero__info">
-      <h1 class="hero__primary-text">Maximize skill,
-        minimize budget</h1>
-      <p class="hero__secondary-text">Our modern courses across a range of in-demand skills will give you the knowledge
-        you need to live the life you
-        want.</p>
-      <button class="button hero__button">Get Started</button>
-    </div>
-    <picture class="hero__image-container">
-      <source srcset="./images/desktop/image-hero-desktop.png">
-      <source srcset="./images/tablet/image-hero-tablet.png">
-      <source srcset="./images/mobile/image-hero-mobile.png">
-      <img class="hero__image" src="./images/desktop/image-hero-desktop.png" alt="woman drinking coffee">
-    </picture>
+    <section class="hero">
+      <div class="hero__info">
+        <h1 class="hero__primary-text">Maximize skill,
+          minimize budget</h1>
+        <p class="hero__secondary-text">Our modern courses across a range of in-demand skills will give you the
+          knowledge
+          you need to live the life you
+          want.</p>
+        <button class="hero__button">Get Started</button>
+      </div>
+      <picture class="hero__image-container">
+        <source srcset="./images/desktop/image-hero-desktop.png">
+        <source srcset="./images/tablet/image-hero-tablet.png">
+        <source srcset="./images/mobile/image-hero-mobile.png">
+        <img class="hero__image" src="./images/desktop/image-hero-desktop.png" alt="woman drinking coffee">
+      </picture>
+    </section>
+
+    <section class="gallery">
+      <article class="card card-1">
+        <h3 class="card-1__primary-text">Check out our most popular courses!</h3>
+      </article>
+
+      <article class="card card-2">
+        <img class="card__image" src="./images/icons/icon-animation.svg">
+        <h4 class="card__primary-text">Animation</h4>
+        <p class="card__secondary-text">Learn the latest animation techniques to create stunning motion design and
+          captivate your audience.</p>
+        <a class="card__link" href="#">Get Started</a>
+      </article>
+
+      <article class="card card-3">
+        <img class="card__image" src="./images/icons/icon-design.svg">
+        <h4 class="card__primary-text">Design</h4>
+        <p class="card__secondary-text">Create beautiful, usable interfaces to help shape the future of how the web
+          looks.
+        </p>
+        <a class="card__link" href="#">Get Started</a>
+      </article>
+
+      <article class="card card-4">
+        <img class="card__image" src="./images/icons/icon-photography.svg">
+        <h4 class="card__primary-text">Photography</h4>
+        <p class="card__secondary-text">Explore critical fundamentals like lighting, composition, and focus to capture
+          exceptional photos.</p>
+        <a class="card__link" href="#">Get Started</a>
+      </article>
+
+      <article class="card card-5">
+        <img class="card__image" src="./images/icons/icon-crypto.svg">
+        <h4 class="card__primary-text">Crypto</h4>
+        <p class="card__secondary-text">All you need to know to get started investing in crypto. Go from beginner to
+          advanced with this 54 hour course.
+        </p>
+        <a class="card__link" href="#">Get Started</a>
+      </article>
+
+      <article class="card card-6">
+        <img class="card__image" src="./images/icons/icon-business.svg">
+        <h4 class="card__primary-text">Business</h4>
+        <p class="card__secondary-text">A step-by-step playbook to help you start, scale, and sustain your business
+          without outside investment.</p>
+        <a class="card__link" href="#">Get Started</a>
+      </article>
+    </section>
   </section>
 
-  <section class="gallery">
-    <article class="card card-1">
-      <h3 class="card-1__primary-text">Check out our most popular courses!</h3>
-    </article>
-
-    <article class="card card-2">
-      <img class="card__image" src="./images/icons/icon-animation.svg">
-      <h4 class="card__primary-text">Animation</h4>
-      <p class="card__secondary-text">Learn the latest animation techniques to create stunning motion design and
-        captivate your audience.</p>
-      <a class="card__link" href="#">Get Started</a>
-    </article>
-
-    <article class="card card-3">
-      <img class="card__image" src="./images/icons/icon-design.svg">
-      <h4 class="card__primary-text">Design</h4>
-      <p class="card__secondary-text">Create beautiful, usable interfaces to help shape the future of how the web looks.
-      </p>
-      <a class="card__link" href="#">Get Started</a>
-    </article>
-
-    <article class="card card-4">
-      <img class="card__image" src="./images/icons/icon-photography.svg">
-      <h4 class="card__primary-text">Photography</h4>
-      <p class="card__secondary-text">Explore critical fundamentals like lighting, composition, and focus to capture
-        exceptional photos.</p>
-      <a class="card__link" href="#">Get Started</a>
-    </article>
-
-    <article class="card card-5">
-      <img class="card__image" src="./images/icons/icon-crypto.svg">
-      <h4 class="card__primary-text">Crypto</h4>
-      <p class="card__secondary-text">All you need to know to get started investing in crypto. Go from beginner to
-        advanced with this 54 hour course.
-        </ class="card__link" p>
-        <a href="#">Get Started</a>
-    </article>
-
-    <article class="card card-6">
-      <img class="card__image" src="./images/icons/icon-business.svg">
-      <h4 class="card__primary-text">Business</h4>
-      <p class="card__secondary-text">A step-by-step playbook to help you start, scale, and sustain your business
-        without outside investment.</p>
-      <a class="card__link" href="#">Get Started</a>
-    </article>
-  </section>
 
   <footer class="footer">
-    <img class="footer__image" src="./images/logo-light.svg" alt="skilled logo">
-    <button class="button footer__button">Get Started</button>
+    <div class="footer__container">
+      <img class="footer__image" src="./images/logo-light.svg" alt="skilled logo">
+      <button class="footer__button">Get Started</button>
+    </div>
   </footer>
 </body>
 
