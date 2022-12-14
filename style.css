@@ -67,8 +67,6 @@ button{
   align-items: center;
 }
 
-
-
 .header__button{
   background-color: var(--color-dark-blue);  
 }
@@ -141,12 +139,12 @@ button{
 
 .gallery{
   max-width: var(--max-width);
-  margin-top: 110px;
+  padding-top: 110px;
 
   display: grid;
   grid-template-columns: repeat(3, 350px);
   grid-template-rows: repeat(2, 322px);
-  gap: 30px;
+  gap: 80px 30px;
 }
 
 .card{
@@ -253,6 +251,20 @@ button{
   .container{
     padding: 0 40px;
   }
+  .gallery{
+    grid-template-columns: repeat(2, 339px);
+    grid-template-rows: repeat(3, 259px);
+    gap: 56px 30px;
+  }
+
+  .card{
+    padding-top: 35px;
+    gap: 10px;
+  }
+
+  .footer__container{
+    padding: 0 40px;
+  }
 }
 
 @media screen and (max-width: 1050px) {
@@ -267,21 +279,34 @@ button{
   }
 }
 
-@media screen and (max-width: 950px) {
+/* Tablet */
+@media screen and (max-width: 965px) {
   .header__button, .footer__button{
     width: 140px;
     height: 48px;
+    font-size: 16px;
   }
 
   .hero{
     flex-direction: column;
     margin-top: 38px;
   }
-
+  
   .hero__info{
     min-width: unset;
     gap: 20px;
+    align-self: flex-start;
   } 
+
+  .hero__primary-text{
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .hero__secondary-text{
+    font-size: 16px;
+    line-height: 26px;
+  }
 
   .hero__button{
     height: 56px;
@@ -293,10 +318,63 @@ button{
     height: 100%;
     object-fit: contain;
   }
+
+  .gallery{
+    padding-top: 150px;
+  }
+
+  .card-1__primary-text{
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .card__primary-text{
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .card__secondary-text{
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .footer{
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .gallery{    
+    grid-template-columns: minmax(min-content, 360px);
+    grid-template-rows: min-content repeat(5, minmax(min-content, 259px));
+    gap: 40px;
+  }
+
+  .card-1{
+    padding: unset;
+    padding: 30px 28px;
+    height: 120px;    
+  }
 }
 
 @media screen and (max-width: 530px) {
   .container{
     padding: 0 16px;
+  }
+  .gallery{
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .footer{
+    height: unset;
+  }
+  .footer__container{    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 0;
   }
 }
